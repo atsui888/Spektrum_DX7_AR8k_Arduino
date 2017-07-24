@@ -2,7 +2,7 @@
 // Transmitter: Spektrum DX7 , Receiver: Spektrum AR8000
 
 #define LED_PIN 11
-// git vs code ok
+// git vs code
 
 // RC Channel Values
 int ch1=0; // receiver label: Throttle
