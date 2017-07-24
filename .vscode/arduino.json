@@ -1,0 +1,5 @@
+{
+    "sketch": "Spektrum_DX7_AR8k_Arduino.ino",
+    "board": "arduino:avr:uno",
+    "port": "COM9"
+}

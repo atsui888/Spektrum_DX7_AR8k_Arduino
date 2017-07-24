@@ -1,3 +1,4 @@
+
 // RC Transmitter output to Arduino
 // Transmitter: Spektrum DX7 , Receiver: Spektrum AR8000
 
@@ -50,6 +51,8 @@
   DX7/Ar8k Ch 8 :=  unused Dx7 has 7 channels, AR8k has 8 channels  
 */
 
+/*
+
 // RC Channel Pins
 const byte ArdPin_ReceiverCh1 = 2;
 const byte ArdPin_ReceiverCh2 = 3;
@@ -101,3 +104,4 @@ void loop() {
   Serial.println(receiverCh7);        
   delay(100);               
 }
+*/
