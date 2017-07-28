@@ -66,26 +66,30 @@ int receiverCh6=0; int receiverCh7=0;
 
 void setup() {
 
-  pinMode(ArdPin_ReceiverCh1, INPUT); 
+  /*pinMode(ArdPin_ReceiverCh1, INPUT); 
   pinMode(ArdPin_ReceiverCh2, INPUT); 
   pinMode(ArdPin_ReceiverCh3, INPUT); 
   pinMode(ArdPin_ReceiverCh4, INPUT); 
-  pinMode(ArdPin_ReceiverCh5, INPUT); 
+  */
+  pinMode(ArdPin_ReceiverCh5, INPUT);
+  /* 
   pinMode(ArdPin_ReceiverCh6, INPUT); 
   pinMode(ArdPin_ReceiverCh7, INPUT); 
-
+*/
   Serial.begin(9600);
 }
 
 void loop() {
-  receiverCh1 = pulseIn(ArdPin_ReceiverCh1,HIGH,25000); 
+  /*receiverCh1 = pulseIn(ArdPin_ReceiverCh1,HIGH,25000); 
+
   receiverCh2 = pulseIn(ArdPin_ReceiverCh2,HIGH,25000); 
   receiverCh3 = pulseIn(ArdPin_ReceiverCh3,HIGH,25000); 
   receiverCh4 = pulseIn(ArdPin_ReceiverCh4,HIGH,25000); 
-  receiverCh5 = pulseIn(ArdPin_ReceiverCh5,HIGH,25000); 
-  receiverCh6 = pulseIn(ArdPin_ReceiverCh6,HIGH,25000); 
+*/  receiverCh5 = pulseIn(ArdPin_ReceiverCh5,HIGH,25000); 
+/*  receiverCh6 = pulseIn(ArdPin_ReceiverCh6,HIGH,25000); 
   receiverCh7 = pulseIn(ArdPin_ReceiverCh7,HIGH,25000); 
-  Serial.print("Channel 1:"); 
+*/
+/*  Serial.print("Channel 1:"); 
   Serial.println(receiverCh1);
   Serial.print("Channel 2:"); 
   Serial.println(receiverCh2);        
@@ -93,11 +97,18 @@ void loop() {
   Serial.println(receiverCh3);        
   Serial.print("Channel 4:"); 
   Serial.println(receiverCh4);        
+*/
   Serial.print("Channel 5:"); 
-  Serial.println(receiverCh5);        
+  Serial.println(receiverCh5);
+        
+/*
   Serial.print("Channel 6:"); 
   Serial.println(receiverCh6);        
   Serial.print("Channel 7:"); 
-  Serial.println(receiverCh7);        
-  delay(100);               
+  Serial.println(receiverCh7);
+*/
+          
+  delay(100); 
+  if(receiverCh5==0) Serial.println("ReceiverCh5 is ZERO");
+  receiverCh5=0;              
 }
